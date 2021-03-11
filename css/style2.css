@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,6 +7,55 @@
     padding: 0;
     background-color: #FFFFFF
 }
+#navbar {
+    height: 94px;
+    border-bottom: 1px solid transparent;
+    transition: all .4s linear;
+    position: relative;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.row {
+    margin-left: -20px;
+}
+.row:before {
+    content: "";
+    display: table;
+    line-height: 0;
+    box-sizing: border-box;
+}
+.navbar-inner {
+    position: relative;
+    height: 94px;
+    overflow: hidden;
+}
+.span12 {
+    width: 940px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+.logo {
+    cursor: pointer;
+    display: inline-block;
+
+}
+.nav-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.standard {
+    float: left;
+    font-size: 0;
+}
+
+
+
+
 
 li, a {
     font-family: "Lato", sans-serif;
@@ -15,53 +63,27 @@ li, a {
     font-size: 16px;
     color: #3E649E;
     text-decoration: none;
- 
 }
-h1 {
-    margin-right: 35%;
-    font-family: "Prata", serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #3E649E;
-    text-decoration: none;
 
-}
-h2 {
-    margin-right: 35%;
+p {
+    margin-right: 50%;
     font-family: "Prata", serif;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 24px;
     color: #3E649E;
     text-decoration: none;
 }
-h3 {
-    font-family: "La Belle Aurore", sans-serif;
-    font-size: 20px;
-    color: #3E649E;
-    text-decoration: none;
-}
-p {
-    font-family: "Lato", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #3E649E;
-    text-decoration: none; 
-}
+
 
 
 header {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    justify-content: space-between;
-   
 }
 
-.logo {
-    cursor: pointer;
-    justify-content: flex-start;
-  
-}
+
 
 .nav_links {
     list-style: none;
@@ -83,7 +105,6 @@ header {
 #areaA {
     height: 150px;
     margin-left: 100px;
-    margin-top: 100px;
 }
 #areaB {
     height: 700px;
@@ -97,14 +118,4 @@ header {
     display: block;
     height: 600px;
     
-}
-.column {
-    float: left;
-    width: 50%;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-
 }
